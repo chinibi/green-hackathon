@@ -1,31 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type='text/javascript' src='script.js'></script>
+    <link rel='stylesheet' href='style.css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <div class='form-group'>
-      <input id='c1' type='checkbox'>1</input><br>
-      <input id='c2' type='checkbox'>2</input><br>
-      <input id='c3' type='checkbox'>3</input><br>
-      <input id='c4' type='checkbox'>4</input><br>
-      <input id='c5' type='checkbox'>5</input><br>
+    <nav id='navbar' class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href='index.html'><img id='logo' height='50' src='images/Logo1.png'>
+        <a class="pull-left" href="#"><img width='50' id='user-pic' src='images/CompetitiveCasey.png'></a>
+      </div>
     </div>
+    </nav>
+    <div class='container'>
 
+      <div class='container-fluid' id="challenge-title">
+        <p>Hi Casey! Your challenge:</p>
+      </div>
+
+      <div id='topic' class='container-fluid'>
+        <div>
+        <img id='water-title' class='water'  src="images/Water.png">
+        </div>
+        <div id='funfact'>
+          <h4>Water Conservation</h4>
+          <p id='funfact-title'>Fun Fact:</p>
+          <small>If you use a low-flow showerhead, you can save 15 gallons of water during a 10 minute shower</small>
+        </div>
+      </div>
+
+      <div class='container-fluid'>
+        <div id='checklist' class='form-group'>
+          <input id='c1' type='checkbox'><span class='listing'>Take 3 two-minute showers</span></input><br>
+          <input id='c2' type='checkbox'><span class='listing'>Use tub for washing dishes</span></input><br>
+          <input id='c3' type='checkbox'><span class='listing'>Make a solar still</span></input><br>
+          <input id='c4' type='checkbox'><span class='listing'>Don't eat beef for 4 days</span></input><br>
+          <input id='c5' type='checkbox'><span class='listing'>Hand wash laundry</span></input><br>
+        </div>
+      </div>
+
+      <div id='modal' class="modal fade" tabindex="-1" data-width='760' role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Congratulations!</h4>
+            </div>
+            <div class="modal-body">
+              <h3>You've unlocked a new badge</h3>
+              <img class='water' src='images/Water.png'>
+              <h3>Water Conservation</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id='see-badges'>See your badges</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    <!-- <div class="users col-md-1">
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+
+      <div class = "user">
+        <img src = "">
+        <p class = "username"> User Name </p>
+        <div class = "complete"> Completed 4 of 5</div>
+      </div>
+    </div> -->
+
+    <div class="badges">
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Water.png'>
+        <p class='badge-title'>Water Conservation</p>
+      </div>
+
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Energy.png'>
+        <p class='badge-title'>Energy Saver</p>
+      </div>
+
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Leaf.png'>
+        <p class='badge-title'>Tree Hugger</p>
+      </div>
+
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Grey1.png'>
+        <p class='badge-title'>Recycler</p>
+      </div>
+
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Grey2.png'>
+        <p class='badge-title'>Rad</p>
+      </div>
+
+      <div class="badge col-xs-6">
+        <img class='img-responsive' src='images/Grey3.png'>
+        <p class='badge-title'>Compost</p>
+      </div>
+    </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='script.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
